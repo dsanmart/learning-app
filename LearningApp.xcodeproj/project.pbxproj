@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E697F2BB27322C4C0066DF55 /* CodeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E697F2BA27322C4C0066DF55 /* CodeTextView.swift */; };
+		E697F2D9273248990066DF55 /* RectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E697F2D8273248990066DF55 /* RectangleCard.swift */; };
 		E6FF108B2730B863001909EB /* LearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FF108A2730B863001909EB /* LearningApp.swift */; };
 		E6FF108D2730B863001909EB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FF108C2730B863001909EB /* HomeView.swift */; };
 		E6FF108F2730B865001909EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6FF108E2730B865001909EB /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		E697F2BA27322C4C0066DF55 /* CodeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextView.swift; sourceTree = "<group>"; };
+		E697F2D8273248990066DF55 /* RectangleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCard.swift; sourceTree = "<group>"; };
 		E6FF10872730B863001909EB /* LearningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6FF108A2730B863001909EB /* LearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningApp.swift; sourceTree = "<group>"; };
 		E6FF108C2730B863001909EB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				E6FF10A92730EE3E001909EB /* ContentViewRow.swift */,
 				E6FF10AB2730F4DD001909EB /* ContentDetailView.swift */,
 				E697F2BA27322C4C0066DF55 /* CodeTextView.swift */,
+				E697F2D8273248990066DF55 /* RectangleCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				E697F2BB27322C4C0066DF55 /* CodeTextView.swift in Sources */,
 				E6FF109C2730B95B001909EB /* ContentModel.swift in Sources */,
 				E6FF10A32730BCC1001909EB /* Models.swift in Sources */,
+				E697F2D9273248990066DF55 /* RectangleCard.swift in Sources */,
 				E6FF10B22730FA7A001909EB /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
