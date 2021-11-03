@@ -20,12 +20,17 @@ class ContentModel: ObservableObject {
     @Published var currentLesson:Lesson?
     var currentLessonIndex = 0
     
-    // Current Lessson Explanation
-    @Published var lessonDescription = NSAttributedString()
+    // Current question
+    @Published var currentQuestion:Question?
+    var currentQuestionIndex = 0
+    
+    // Html Explanations
+    @Published var codeText = NSAttributedString()
     var styleData:Data?
     
     // Current selected content and test
     @Published var currentContentSelected:Int?
+    @Published var currentTestSelected:Int?
     
     init() {
         getLocalData()
@@ -107,7 +112,7 @@ class ContentModel: ObservableObject {
         currentLesson = currentModule!.content.lessons[currentLessonIndex]
         
         // Set lesson explanation
-        lessonDescription = addStyling(currentLesson!.explanation)
+        codeText = addStyling(currentLesson!.explanation)
     }
     
     func nextLesson() {
@@ -119,7 +124,7 @@ class ContentModel: ObservableObject {
            
             // Set the current lesson property
             currentLesson = currentModule!.content.lessons[currentLessonIndex] // Since currentLesson is a published property it will update it in the UI
-            lessonDescription = addStyling(currentLesson!.explanation)
+            codeText = addStyling(currentLesson!.explanation)
             
         } else {
             
@@ -133,6 +138,24 @@ class ContentModel: ObservableObject {
         
         return currentLessonIndex + 1 < currentModule!.content.lessons.count
         
+    }
+    
+    //MARK: Question navigation methods
+    func beginTest(_ moduleId:Int) {
+        
+        // Set the current module
+        beginModule(moduleId)
+            
+        // Set the current question
+        currentQuestionIndex = 0
+        
+        // If there are questions, set the current question to the first one
+        if currentModule?.test.questions.count ?? 0 > 0 { // If there current module is nil don't set currentQuestion
+            currentQuestion = currentModule!.test.questions[currentQuestionIndex]
+            
+            // Set the question content as well
+            codeText = addStyling(currentQuestion!.content)
+        }
     }
     
     // MARK: Code Styling
