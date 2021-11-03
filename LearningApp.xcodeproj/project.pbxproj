@@ -19,6 +19,8 @@
 		E6FF10A72730DFE0001909EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FF10A62730DFE0001909EB /* ContentView.swift */; };
 		E6FF10AA2730EE3E001909EB /* ContentViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FF10A92730EE3E001909EB /* ContentViewRow.swift */; };
 		E6FF10AC2730F4DD001909EB /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FF10AB2730F4DD001909EB /* ContentDetailView.swift */; };
+		E6FF10B02730F8BD001909EB /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6FF10AF2730F8BD001909EB /* AVKit.framework */; };
+		E6FF10B22730FA7A001909EB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FF10B12730FA7A001909EB /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,9 @@
 		E6FF10A62730DFE0001909EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E6FF10A92730EE3E001909EB /* ContentViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewRow.swift; sourceTree = "<group>"; };
 		E6FF10AB2730F4DD001909EB /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
+		E6FF10AD2730F8A9001909EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E6FF10AF2730F8BD001909EB /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		E6FF10B12730FA7A001909EB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6FF10B02730F8BD001909EB /* AVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +59,7 @@
 			children = (
 				E6FF10892730B863001909EB /* LearningApp */,
 				E6FF10882730B863001909EB /* Products */,
+				E6FF10AE2730F8BD001909EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,7 @@
 		E6FF10892730B863001909EB /* LearningApp */ = {
 			isa = PBXGroup;
 			children = (
+				E6FF10AD2730F8A9001909EB /* Info.plist */,
 				E6FF108A2730B863001909EB /* LearningApp.swift */,
 				E6FF10982730B915001909EB /* Views */,
 				E6FF10992730B91D001909EB /* ViewModels */,
@@ -119,8 +127,17 @@
 			children = (
 				E6FF109F2730BB33001909EB /* data.json */,
 				E6FF109E2730BB33001909EB /* style.html */,
+				E6FF10B12730FA7A001909EB /* Constants.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		E6FF10AE2730F8BD001909EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6FF10AF2730F8BD001909EB /* AVKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +220,7 @@
 				E6FF10AA2730EE3E001909EB /* ContentViewRow.swift in Sources */,
 				E6FF109C2730B95B001909EB /* ContentModel.swift in Sources */,
 				E6FF10A32730BCC1001909EB /* Models.swift in Sources */,
+				E6FF10B22730FA7A001909EB /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +353,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"LearningApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LearningApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -363,6 +382,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"LearningApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LearningApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -39,8 +39,8 @@ struct HomeViewRow: View {
                     Text(description)
                         .padding(.bottom, 20)
                         .font(.caption)
-
-                // Icons
+                    
+                    // Icons
                     HStack {
                         
                         Image(systemName: "text.book.closed")
@@ -65,7 +65,7 @@ struct HomeViewRow: View {
             }
             .padding(.horizontal, 20)
         }
-
+        
         
     }
 }
