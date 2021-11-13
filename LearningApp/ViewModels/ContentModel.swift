@@ -115,8 +115,11 @@ class ContentModel: ObservableObject {
                 // Decode
                 let modules = try decoder.decode([Module].self, from: data!)
                 
-                // Append parsed modules into modules prooperty
-                self.modules += modules
+                // This is to avoid the backgorund thread to constantly try to upadte the ui
+                DispatchQueue.main.async {
+                    // Append parsed modules into modules prooperty
+                    self.modules += modules
+                }
             }
             catch {
                 // Couldn't parse json
@@ -125,6 +128,7 @@ class ContentModel: ObservableObject {
                 
             
         }
+        
         
         // Kick off data task
         dataTask.resume()
