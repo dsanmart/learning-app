@@ -115,7 +115,8 @@ class ContentModel: ObservableObject {
                 // Decode
                 let modules = try decoder.decode([Module].self, from: data!)
                 
-                // This is to avoid the backgorund thread to constantly try to upadte the ui
+                // Assign the code to the main thread to be taken care instead of in a background thread
+                // This is to avoid the backgorund thread to constantly try to upadte the ui.
                 DispatchQueue.main.async {
                     // Append parsed modules into modules prooperty
                     self.modules += modules
