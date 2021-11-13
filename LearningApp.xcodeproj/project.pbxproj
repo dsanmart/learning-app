@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E608C6DC274075FF004FC473 /* TestResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E608C6DB274075FF004FC473 /* TestResultView.swift */; };
 		E697F2BB27322C4C0066DF55 /* CodeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E697F2BA27322C4C0066DF55 /* CodeTextView.swift */; };
 		E697F2D9273248990066DF55 /* RectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E697F2D8273248990066DF55 /* RectangleCard.swift */; };
 		E697F2DB273258B80066DF55 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E697F2DA273258B80066DF55 /* TestView.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E608C6DB274075FF004FC473 /* TestResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultView.swift; sourceTree = "<group>"; };
 		E697F2BA27322C4C0066DF55 /* CodeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextView.swift; sourceTree = "<group>"; };
 		E697F2D8273248990066DF55 /* RectangleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCard.swift; sourceTree = "<group>"; };
 		E697F2DA273258B80066DF55 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				E6FF10A92730EE3E001909EB /* ContentViewRow.swift */,
 				E6FF10AB2730F4DD001909EB /* ContentDetailView.swift */,
 				E697F2DA273258B80066DF55 /* TestView.swift */,
+				E608C6DB274075FF004FC473 /* TestResultView.swift */,
 				E697F2BA27322C4C0066DF55 /* CodeTextView.swift */,
 				E697F2D8273248990066DF55 /* RectangleCard.swift */,
 			);
@@ -222,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E697F2DB273258B80066DF55 /* TestView.swift in Sources */,
+				E608C6DC274075FF004FC473 /* TestResultView.swift in Sources */,
 				E6FF108D2730B863001909EB /* HomeView.swift in Sources */,
 				E6FF10A52730DB96001909EB /* HomeViewRow.swift in Sources */,
 				E6FF10A72730DFE0001909EB /* ContentView.swift in Sources */,
